@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+    <link rel="stylesheet" type="text/css" href="../styles/reset.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/menu.css">
+</head>
+<body>
+<header>
+    <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li>
+            <a href="#">Gallery</a>
+            <ul class="sub-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li>
+                    <a href="#">Contacts</a>
+                    <ul class="contacts-sub-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li>
+                            <a href="#">Contacts</a>
+                            <ul class="contacts-sub-nav">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Contacts</a></li>
+                                <li><a href="#">About Us</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">About us</a></li>
+        <li class="menu_right"><a href="#">Support</a></li>
+    </ul>
+</header>
+<div class="background">
+</div>
+<form class="container" action="#" method="POST">
+    <h1>Registration form</h1>
+    <div>
+            <div class="name">
+                <label class="label" for="name">Name</label>
+                <input id="name" type="text" required placeholder="Name" name="Name">
+            </div>
+        </div>
+        <div class="email">
+            <label class="label" for="email">Email</label>
+            <input id="email" type="text" required placeholder="Email" name="Email">
+        </div>
+        <div class="login">
+            <label class="label" for="login">Login</label>
+            <input id="login" type="text" required placeholder="Login" name="Login">
+        </div>
+        <div class="password">
+            <label class="label" for="password">Password</label>
+            <input id="password" type="password" required placeholder="Password" name="Password">
+        </div>
+    <div>
+        <label class="label" for="avatar">Avatar</label>
+        <input id="avatar" type="file" name="Avatar">
+    </div>
+    <div>
+        <label class="label" for="country">Country</label>
+        <select id="country" name="Country">
+            <option selected value="Ukraine">Ukraine</option>
+            <option value="Swiss">Swiss</option>
+            <option value="Germany">Germany</option>
+            <option value="Italy">Italy</option>
+        </select>
+    </div>
+    <div>
+        <label class="label">Gender</label>
+        <div class="gender">
+            <label for="male">Male</label>
+            <input id="male" type="radio" name="gender" value="male">
+            <label for="female">Female</label>
+            <input id="female" type="radio" name="gender" value="female">
+        </div>
+    </div>
+    <div>
+        <label class="label">Grade</label>
+        <div class="Grade">
+            <label class="level" for="Junior">Junior</label>
+            <input id="Junior" type="checkbox" name="Junior">
+            <label class="level" for="Middle">Middle</label>
+            <input id="Middle" type="checkbox" name="Middle">
+            <label class="level" for="Senior">Senior</label>
+            <input id="Senior" type="checkbox" name="Senior">
+        </div>
+    </div>
+    <div>
+        <input id="Submit" type="submit" value="Submit">
+    </div>
+</form>
+<footer>
+    <ul class="footer-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">About Us</a></li>
+    </ul>
+</footer>
+</body>
