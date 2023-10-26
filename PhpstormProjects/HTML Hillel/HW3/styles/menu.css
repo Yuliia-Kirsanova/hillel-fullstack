@@ -1,0 +1,167 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.nav,
+.sub-nav,
+.contacts-sub-nav{
+    background: #623bed;
+    font-size: 0;
+}
+.nav li{
+    display: inline-block;
+    border-left: 1px solid #fff;
+    font-size: 16px;
+    position: relative;
+}
+.nav li:first-child,
+.nav li:last-child{
+    border: none;
+}
+.nav li:hover{
+    background: #1739a9;
+}
+.nav a{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+.nav .menu_right{
+    float: right;
+}
+.nav .sub-nav,
+.nav .contacts-sub-nav{
+    position: absolute;
+    display: none;
+}
+.nav .sub-nav li{
+    width: 100%;
+    border: none;
+}
+.nav li:hover>ul{
+   display: block;
+}
+.contacts-sub-nav{
+    top: 0;
+    right: -108px;
+    width: 100%;
+}
+.background{
+    background: url("https://i1.sndcdn.com/visuals-001065631300-SGqz5u-original.jpg");
+    background-position: center;
+    height: 70vh;
+    margin-bottom: 50px;
+}
+.container{
+    width: 768px;
+    margin: 0 auto;
+}
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.label{
+    display: flex;
+    justify-content: right;
+    margin-right:445px;
+    margin-top: 30px;
+}
+#name,
+#login,
+#password,
+#email,
+#avatar {
+    display: flex;
+    justify-content: left;
+    margin-left:340px;
+    border: none;
+    border-bottom: 1px solid #623bed;
+    margin-top: -20px;
+}
+#name:focus,
+#login:focus,
+#password:focus,
+#email:focus,
+#avatar:focus{
+    outline: none;
+    border-bottom: 1px solid #1739a9;
+}
+.name label,
+.email label,
+.login label,
+.password label{
+    position: relative;
+}
+.name label::after,
+.email label::after,
+.login label::after,
+.password label::after{
+    content: "*";
+    position: absolute;
+    color: red;
+    left: 325px;
+}
+.Grade{
+    display: flex;
+    justify-content: right;
+    margin-top: -20px;
+    margin-right:200px;
+}
+.level{
+    margin-left: 5px;
+}
+.gender{
+    display: flex;
+    justify-content: right;
+    margin-right:285px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+#avatar {
+    border: none;
+}
+#country{
+    display: flex;
+    justify-content: left;
+    margin-left:340px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+
+#Submit{
+    padding: 5px 10px;
+    border: 1px solid  #623bed;
+    display: flex;
+    margin-left: 340px;
+    margin-top: 20px;
+}
+#Submit:hover{
+    background:  #623bed;
+    color: #fff;
+}
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    background: #623bed;
+    margin-top: 70px;
+}
+.footer-nav a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer-nav a:hover{
+    border-bottom: 1px solid #fff;
+}
+.footer-nav li {
+    padding: 20px;
+    list-style: none;
+}
+
+
+
+
+
+
