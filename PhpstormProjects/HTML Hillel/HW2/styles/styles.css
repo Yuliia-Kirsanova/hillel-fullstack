@@ -1,0 +1,53 @@
+body {
+    font-family: Roboto, Helvetica sans-serif;
+    font-size: 18px;
+}
+.title {
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 40px;
+}
+.tag {
+    font-size: 20px;
+    font-weight: bold;
+    background: #E0DFE1;
+    width: 55px;
+    padding: 5px;
+}
+h1 {
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+a {
+    color: rgb(74, 31, 165);
+    text-decoration: none;
+    font-weight: bold;
+}
+.container {
+    width: 768px;
+    margin: 0 auto;
+}
+.text {
+    color: grey;
+    line-height: 32px;
+    margin-bottom: 25px;
+}
+.text2 {
+    color: grey;
+    margin-top: 35px;
+    line-height: 32px;
+}
+
+.quote_text {
+    padding: 15px;
+    font-weight: bold;
+    line-height: 32px;
+}
+.quote{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-left: 5px solid rgb(74, 31, 165);
+}
+
+
