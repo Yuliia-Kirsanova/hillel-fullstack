@@ -37,6 +37,7 @@ function save(data) {
     const editedLi = document.getElementById(`item-${uuid}`);
     if (editedLi) {
         editedLi.querySelector(`#title-${uuid}`).innerText = data.title;
+        editedLi.querySelector(`#description-${uuid}`).innerText = data.description;
         return;
     }
 
@@ -44,6 +45,7 @@ function save(data) {
     liElement.id = `item-${uuid}`;
     liElement.innerHTML = `
     <div id="title-${uuid}">${data.title}</div>
+    <div id="description-${uuid}">${data.description}</div>
     <div>
         <button data-uuid="${uuid}" class="btn btn-warning btn-sm edit-button">Edit</button>
         <button data-uuid="${uuid}" class="btn btn-danger btn-sm remove-button">Remove</button>
@@ -55,13 +57,7 @@ function save(data) {
     liElement.querySelector('.remove-button').addEventListener('click', function (event) {
         remove(event.target.dataset.uuid);
     });
-
-    let text = document.getElementById('form-description');
-    text.id = `description-${uuid}`;
-    text.innerHTML = `
-     <div id="description-${uuid}">${data.description}</div>`;
     document.getElementById('todo').appendChild(liElement);
-    document.getElementById('todo').appendChild(text);
 }
 
 document.getElementById('form').addEventListener('submit', function (event) {
@@ -95,19 +91,18 @@ function validateForm(data) {
         document.getElementById('form-title').classList.add('is-invalid');
         decision = false;
     }
-    else if (data.title === " ") {
-        document.getElementById('form-title-invalid-feedback').innerText = 'Title field can not be empty.';
-        document.getElementById('form-title').classList.add('is-invalid');
-    }
     else if (!data.title.trim()) {
-            document.getElementById('form-title-invalid-feedback').innerText = 'Title field is required.';
-            document.getElementById('form-title').classList.add('is-invalid');
-            decision = false;
-        }
-    else if (data.title.trim().length === 0) {
         document.getElementById('form-title-invalid-feedback').innerText = 'Title field cannot consist only of spaces.';
         document.getElementById('form-title').classList.add('is-invalid');
         decision = false;
+    }
+    else if (!data.description.trim()){
+        document.getElementById('form-description-invalid-feedback').innerText = 'Description field cannot consist only of spaces.';
+        document.getElementById('form-description').classList.add('is-invalid');
+        decision = false;
+    }
+    else if (data.description.innerHTML){
+        data.description= data.description.innerText;
     }
     return decision;
 
