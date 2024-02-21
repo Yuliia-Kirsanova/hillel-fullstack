@@ -19,7 +19,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     if ($email === '') {
         $errors["email"] = "Email is required";
-    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    }
+    elseif (strlen($email) > 255) {
+        $errors ["email"] = "Email must have less than 255 symbols";
+    }
+    elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $errors["email"] = "Incorrect email format";
     }
     if ($password === '') {
